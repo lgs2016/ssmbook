@@ -1,6 +1,7 @@
 package com.ssm.dao;
 
 import com.ssm.pojo.Books;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -15,8 +16,10 @@ public interface BookMapper {
     int updateBook(Books books);
 
     //根据id查询,返回一个Book
-    Books queryBookById(int id);
+    Books queryBookById(@Param("bookId") int id);
 
     //查询全部Book,返回list集合
     List<Books> queryAllBook();
+
+    Books queryBookByName(@Param("bookName") String bookName);
 }
