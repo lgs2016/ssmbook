@@ -39,10 +39,6 @@
         select * from ssmbuild.books where bookName = #{bookName}
     </select>
 
-    <select id="getBooksByRowBounds" resultType="Books">
-        select * from ssmbuild.books
-    </select>
-
 
 
 </mapper>

@@ -23,5 +23,4 @@ public interface BookMapper {
 
     Books queryBookByName(@Param("bookName") String bookName);
 
-    List<Books> getBooksByRowBounds();
 }
