@@ -2,7 +2,6 @@ package com.ssm.service;
 
 
 import com.ssm.pojo.Books;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -21,4 +20,5 @@ public interface BookService {
     List<Books> queryAllBook();
 
     Books queryBookByName(String bookName);
+
 }
